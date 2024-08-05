@@ -1,0 +1,13 @@
+package com.example.sum
+import java.util.*
+data class ComplexNumber (val real: Int , val imaginary:Int ){
+    operator fun plus (other :ComplexNumber):ComplexNumber {
+        return ComplexNumber (real+other.real , imaginary+other.imaginary)
+    }
+}
+fun main(args: Array<String>) {
+    val comp1= ComplexNumber(2,3)
+    val comp2=ComplexNumber (2,4)
+    val sum = comp1+comp2
+println(sum)
+}

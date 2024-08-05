@@ -1,0 +1,13 @@
+package com.example.sum
+import java.util.*
+fun  mapStringLengths(strings: List<String>): Map<String, Int> {
+return strings.associateWith()
+    {it.length} 
+}
+​
+fun main (args: Array<String>){
+val strings = listOf("apple","Banana", "watermelon")
+val stringLengths=mapStringLengths(strings)
+println(stringLengths)
+​
+}

@@ -1,0 +1,11 @@
+package com.example.sum
+import java.util.*
+class Person (val name: String ,val age : Int){
+fun displayDetails(){
+    println("Name is: $name , Age is :$age ")
+}}
+​
+fun main (args: Array<String>){
+val p1=Person("Noor",20)
+p1.displayDetails()
+}

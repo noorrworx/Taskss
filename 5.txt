@@ -1,0 +1,13 @@
+package com.example.sum
+import java.util.*
+​
+fun applyToStrings(strings: List<String>,func: (String) -> String): List<String>{
+return strings.map(func) }
+​
+fun main (args: Array<String>){
+val strings  = listOf("noor ", "elsayed ","itworx")
+val uppercasedStrings = applyToStrings(strings) 
+   { it.uppercase()}
+ 
+println(uppercasedStrings)
+}

@@ -1,0 +1,25 @@
+package com.example.sum
+import java.util.*;
+fun main (args: Array<String>){
+    var intVariance:Int=0
+    var doubleVariance:Double=10.5
+    var stringVariance:String="Noor"
+    var BooleanVariance:Boolean=true
+     println("Int:$intVariance ")
+    println("double: $doubleVariance ")
+    println("String: $stringVariance ")
+    println("boolean: $BooleanVariance  ")
+​
+    intVariance=2
+    doubleVariance=22.3
+    stringVariance="Break"
+    var Booleanvariance = false
+    
+println("updated val :")
+    println("Int:$intVariance ")
+    println("double: $doubleVariance ")
+    println("String: $stringVariance ")
+    println("boolean: $BooleanVariance  ")
+​
+​
+}

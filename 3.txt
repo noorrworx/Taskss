@@ -1,0 +1,24 @@
+package com.example.sum
+import java.util.*
+​
+fun main(args: Array<String>) {
+    val scanner = Scanner(System.`in`) 
+    println("Enter a number:")
+    val num = scanner.nextInt()
+    
+​
+    if (num > 0) {
+        println("Positive")
+    } else if (num < 0) {
+        println("Negative")
+    } else {
+        println("Zero")
+    }
+​
+    // When expression
+    when {
+        num > 0 -> println("Positive") // Use println for consistency
+        num < 0 -> println("Negative")
+        else -> println("Zero")
+    }
+}

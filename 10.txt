@@ -1,0 +1,26 @@
+package com.example.sum
+import java.util.*
+open class Vehicle(val make: String ,val model : String){
+open fun displayInfo(){
+    println("MAKE: $make , Model:$model ")
+}}
+class Car ( make :String , model :String , val number :Int ) :
+Vehicle(make,model){
+  override  fun displayInfo(){
+    super.displayInfo()
+    println("number $number")
+}}
+​
+class Motorcycle (make :String , model :String , val color :String ) :
+Vehicle(make,model){
+   override fun displayInfo(){
+    super.displayInfo()
+    println("color: $color")
+}}
+​
+fun main (args: Array<String>){
+val car = Car ("Vokswagen","Golf",4)
+val motorcycle = Motorcycle("Harley","V","Black")
+car.displayInfo()
+motorcycle.displayInfo()
+}

@@ -1,0 +1,11 @@
+package com.example.sum
+import java.util.* 
+​
+fun main (args: Array<String>){
+val num = listOf (1,2,3,4,6,8)
+val evennum=num.filter() 
+    {
+        it%2==0
+    }
+    println(evennum)
+}

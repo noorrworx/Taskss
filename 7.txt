@@ -1,0 +1,22 @@
+package com.example.sum
+import java.util.* 
+​
+fun main (args: Array<String>){
+    val strings =listOf("java","Kotlin","C++")
+     val filteredstrings = strings.filter()
+    { it.length>3 }
+   
+     println(filteredstrings)
+     
+     val num=setOf(2,33,4,64,2)
+     println(num)
+     
+    val color = mapOf("Red" to 1, "White" to 2, "Black" to 3)
+    println(color)
+​
+    val numberList=listOf(10,20,30,40)
+    val sum =numberList.reduce()
+   
+    {accumlate ,next -> accumlate+next}
+    println(sum)
+} 

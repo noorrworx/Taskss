@@ -1,0 +1,15 @@
+package com.example.sum
+import java.util.*
+​
+fun String.countVowels(): Int{
+    val vowels = setOf('a','i','o','e','u')
+    return this.count {
+        it in vowels 
+    }
+}
+​
+fun main(args: Array<String>) {
+    val str="hello"
+    val vowelcount=str.countVowels()
+println("$vowelcount")
+}

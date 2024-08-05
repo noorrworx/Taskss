@@ -1,0 +1,17 @@
+package com.example.sum
+import java.util.*;
+fun SumOfEvenNumbers (numbers:List<Int>):Int {
+    return numbers.filter{
+        it%2==0 
+    }
+    .sum()  //calc
+    }
+​
+​
+fun main (args: Array<String>){
+val numbers=listOf(1,2,3,4,5,6,8)
+    val sum = SumOfEvenNumbers(numbers)
+    println("sum: $sum") 
+​
+​
+}

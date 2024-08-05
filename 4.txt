@@ -1,0 +1,19 @@
+package com.example.sum
+import java.util.*;
+​
+fun main (args: Array<String>){
+    val c=10 //count
+    var num1=0
+    var num2=1
+    println("$num1 ")
+    println("$num2 ")
+    var i=0
+​
+    while(i<=c) {
+    val sum = num1+num2
+    println("$sum")
+    num1=num2
+    num2=sum
+    i++
+    }
+}

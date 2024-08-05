@@ -1,0 +1,13 @@
+package com.example.sum
+import java.util.*
+​
+fun nullableStringLength(input: String?): Int {
+    return input?.length ?: 0 }
+​
+fun main(args: Array<String>) {
+    val str1: String? = "Kotlin"
+    val str2: String? = null
+​
+    println("The length is ${nullableStringLength(str1)}")
+    println("The length is ${nullableStringLength(str2)}")
+}
